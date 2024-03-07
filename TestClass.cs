@@ -33,6 +33,54 @@ namespace TriangleTest
      Assert.AreEqual(expectedResult, actualResult);
  }
 
+
+
+            //Isoceles
+            [Test]
+            public void AnalyzeTriangle_InputLargeIsosceles_ReturnsIsosceles()
+            {
+                //Arrange
+                int firstSide = 15;
+                int secondSide = 15;
+                int thirdSide = 20;
+                string expectedResult = "A triangle is formed and it is an ISOSCELES";
+                //Act
+                string actualResult = Triangle.AnalyzeTriangle(firstSide, secondSide, thirdSide);
+                //Assert
+                Assert.AreEqual(expectedResult, actualResult);
+            }
+
+
+            [Test]
+            public void AnalyzeTriangle_InputMediumIsosceles_ReturnsIsosceles()
+            {
+                //Arrange
+                int firstSide = 10;
+                int secondSide = 10;
+                int thirdSide = 14;
+                string expectedResult = "A triangle is formed and it is an ISOSCELES";
+                //Act
+                string actualResult = Triangle.AnalyzeTriangle(firstSide, secondSide, thirdSide);
+                //Assert
+                Assert.AreEqual(expectedResult, actualResult);
+            }
+
+            [Test]
+            public void AnalyzeTriangle_InputSmallIsosceles_ReturnsIsosceles()
+            {
+                //Arrange
+                int firstSide = 5;
+                int secondSide = 5;
+                int thirdSide = 8;
+                string expectedResult = "A triangle is formed and it is an ISOSCELES";
+                //Act
+                string actualResult = Triangle.AnalyzeTriangle(firstSide, secondSide, thirdSide);
+                //Assert
+                Assert.AreEqual(expectedResult, actualResult);
+            }
+
+
+            
             //Zero Cases
 
             [Test]
