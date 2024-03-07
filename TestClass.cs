@@ -16,7 +16,22 @@ namespace TriangleTest
 
         public class TriangleTest
         {
-            
+             //Equilateral
+ [Test]
+ public void AnalyzeTriangle_InputAllSidesEqual_ReturnsEquilateral()
+ {
+     // Arrange
+     int firstSide = 8;
+     int secondSide = 8;
+     int thirdSide = 8;
+     string expectedResult = "A triangle is formed and it is an EQUILATERAL";
+
+     // Act
+     string actualResult = TriangleSolver.Triangle.AnalyzeTriangle(firstSide, secondSide, thirdSide);
+
+     // Assert
+     Assert.AreEqual(expectedResult, actualResult);
+ }
 
             //Zero Cases
 
