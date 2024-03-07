@@ -80,6 +80,80 @@ namespace TriangleTest
             }
 
 
+
+   //Scalene
+   [Test]
+   public void AnalyzeTriangle_Input9and10and11_ReturnsScalene()
+   {
+       //Arrange
+       int firstSide = 9;
+       int secondSide = 10;
+       int thirdSide = 11;
+       string expectedResult = "A triangle is formed and it is a SCALENE";
+       //Act
+       string actualResult = Triangle.AnalyzeTriangle(firstSide, secondSide, thirdSide);
+       //Assert
+       Assert.AreEqual(expectedResult, actualResult);
+   }
+
+
+   [Test]
+   public void AnalyzeTriangle_Input6and8and13_ReturnsScalene()
+   {
+       //Arrange
+       int firstSide = 6;
+       int secondSide = 8;
+       int thirdSide = 13;
+       string expectedResult = "A triangle is formed and it is a SCALENE";
+       //Act
+       string actualResult = TriangleSolver.Triangle.AnalyzeTriangle(firstSide, secondSide, thirdSide);
+       //Assert
+       Assert.AreEqual(expectedResult, actualResult);
+   }
+   [Test]
+   public void AnalyzeTriangle_Input12and14and15_ReturnsScalene()
+   {
+       //Arrange
+       int firstSide = 12;
+       int secondSide = 14;
+       int thirdSide = 15;
+       string expectedResult = "A triangle is formed and it is a SCALENE";
+       //Act
+       string actualResult = TriangleSolver.Triangle.AnalyzeTriangle(firstSide, secondSide, thirdSide);
+       //Assert
+       Assert.AreEqual(expectedResult, actualResult);
+   }
+
+   [Test]
+   public void AnalyzeTriangle_Input3and4and5_ReturnsScalene()
+   {
+       //Arrange
+       int firstSide = 3;
+       int secondSide = 4;
+       int thirdSide = 5;
+       string expectedResult = "A triangle is formed and it is a SCALENE";
+       //Act
+       string actualResult = TriangleSolver.Triangle.AnalyzeTriangle(firstSide, secondSide, thirdSide);
+       //Assert
+       Assert.AreEqual(expectedResult, actualResult);
+   }
+
+
+
+   [Test]
+   public void AnalyzeTriangle_Input5and7and10_ReturnsScalene()
+   {
+       //Arrange
+       int firstSide = 5;
+       int secondSide = 7;
+       int thirdSide = 10;
+       string expectedResult = "A triangle is formed and it is a SCALENE";
+       //Act
+       string actualResult = TriangleSolver.Triangle.AnalyzeTriangle(firstSide, secondSide, thirdSide);
+       //Assert
+       Assert.AreEqual(expectedResult, actualResult);
+   }
+            
             
             //Zero Cases
 
